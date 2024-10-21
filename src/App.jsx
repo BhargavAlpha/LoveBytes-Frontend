@@ -7,7 +7,7 @@ import Favourites from './components/Favourites/Favourites';
 import Notifications from './components/Notifications/Notifications';
 import AnalyticsDashboard from './components/Dashbaord/Dashboard';
 import Profile from './components/Profile/Profile';
-import { sessionsData } from './utils/sessionsData';
+import  sessionsData  from './utils/sessionsData';
 import toast, { Toaster } from 'react-hot-toast'; 
 import Footer from './components/Footer/Footer';
 import '@fortawesome/fontawesome-free/css/all.min.css';

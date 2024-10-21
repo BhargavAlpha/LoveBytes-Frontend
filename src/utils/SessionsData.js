@@ -118,4 +118,6 @@ const messages = [
     }
 ];
 
-export const sessionsData = { messages, cards };
+const sessionsData = { messages, cards };
+
+export default sessionsData;
