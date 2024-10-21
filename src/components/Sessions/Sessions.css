@@ -1,0 +1,217 @@
+
+
+.desktop2-bottom{
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+.desktop2-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desktop2-header h1{
+    color: var(--Black-900, #333);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+.desktop2-header h1 span{
+  color: red;
+  font-size: 56px;
+   font-weight: 700;
+}
+.desktop2-header span{
+    color: var(--Black-400, #888);
+    /* Normal/20/500-Medium */
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* FilterBar.css */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap:50px;
+    justify-content: space-between;
+  }
+  .filter-bar-left, .filter-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .filter-bar-right{
+    width: 50%;
+    justify-content: flex-end;
+  }
+  
+  .filter-item {
+    padding: 10px 5px;
+    border-radius: 8px;
+    border: 1px solid var(--Black-200, #D1D1D1);
+    cursor: pointer;
+    background-color: white;
+    white-space: nowrap;
+    color: var(--Black-400, #888);
+    /* font-family: Poppins; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+  }
+  
+  .filter-item select {
+    appearance: none; 
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .search-bar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--Black-200, #D1D1D1);
+    padding: 12px 7px;
+    flex-grow: 1;
+      
+
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    color: var(--Black-400, #888);
+    /* Normal/14/500-Medium */
+    /* font-family: Poppins; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .love-card {
+    position:relative;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+    max-width: 300px; /* Maximum width for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    align-items: left;
+  }
+  .love-card h2,.love-card p{
+    text-align: left;
+    color: white;
+  }
+  .favorite-icon{
+    position:absolute;
+    top:10px;
+    right:12px;
+  }
+  .favorite-icon {
+    cursor: pointer;
+    transition: fill 0.3s;
+  }
+  
+  .favorited {
+    stroke: red; /* Change this to your preferred color */
+    fill:red;
+  }
+  
+  .love-card:hover {
+    transform: scale(1.05);
+  }
+
+  .session-list{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  gap: 20px; 
+  padding: 20px;
+
+  }
+  @media screen  and (max-width:670px){
+    .session-list{
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .desktop2-bottom{
+        padding:10px;
+        padding-top: 30px;
+    }
+    .filter-bar {
+      flex-wrap: wrap;
+      gap:5px;
+    }
+    .filter-bar-right{
+        width: 100%;
+    }
+    .filter-bar-left{
+      overflow: hidden;
+      overflow-x: scroll;
+      scrollbar-width: none; 
+    }
+    .filter-item, .search-bar {
+      flex-basis: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .love-messages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.love-message-box {
+  position: relative;
+    background-color: #ffe6e6;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.love-message-box h3 {
+    margin: 0;
+    color: #ff4d4d;
+    font-size: 1.2em;
+}
+
+.love-message-box p {
+    margin-top: 10px;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+}

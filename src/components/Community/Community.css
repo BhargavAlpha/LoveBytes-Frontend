@@ -1,0 +1,117 @@
+/* Container for the community form */
+.community-form-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.community-form-container h2 {
+    text-align: center;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Form styling */
+.community-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.community-textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+.community-textarea:focus {
+    border-color: #ff6b6b;
+    outline: none;
+}
+
+/* Submit button styling */
+.submit-button {
+    padding: 12px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e05656;
+}
+
+/* Questions list */
+.questions-list {
+    margin-top: 20px;
+}
+
+.question-item {
+    background-color: #fff;
+    padding: 15px;
+    border-left: 5px solid #ff6b6b;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    color: #333;
+    font-size: 1rem;
+}
+
+.no-questions {
+    text-align: center;
+    color: #999;
+    font-size: 1rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .community-form-container {
+        width: 95%;
+    }
+
+    .community-form-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .community-textarea {
+        font-size: 0.9rem;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .community-form-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .community-textarea {
+        font-size: 0.85rem;
+    }
+
+    .submit-button {
+        font-size: 0.95rem;
+        padding: 10px 16px;
+    }
+
+    .question-item {
+        font-size: 0.9rem;
+    }
+}
